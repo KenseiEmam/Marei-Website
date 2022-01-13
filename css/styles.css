@@ -1,0 +1,448 @@
+
+body{
+    margin:0px;
+    height: 100%;
+    background-color: #F4F6FF;
+}
+.box{
+    position:relative;
+}
+.containerio{
+    width:70%;
+    margin:auto;
+}
+.contactP{
+    width:40%;
+    margin: 10px auto 40px;
+}
+.Emailbox{
+    text-align:center;
+    border-color:#68a0a1;
+    border-radius:3px;
+    background-color:#f4f6ff;
+    width:50%; 
+    margin-bottom:30px;
+    height:40px;
+    box-shadow: 0px 3px #FBD46D;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url("LobsterTwo-Regular.ttf");
+  }
+@font-face {
+    font-family: SecondFont;
+    src: url("AbrilFatface-Regular.ttf");
+}
+@font-face {
+    font-family: DefFont;
+    src: url("Assistant-VariableFont_wght.ttf");
+}
+#footer{
+    bottom:0px;
+    width:100%;
+    padding: 40px 0 20px 0;
+    background-color:#4F8A8B;
+    text-align: center;
+}
+#footer a{
+    color:#256364;
+    font-family:DefFont;
+    text-decoration-line:none;
+}
+#footer a:hover{
+    color:#f4f6ff;
+    text-shadow: 0px 1px #FBD46D;
+}
+#footer p{
+    color:#256364;
+    font-family:DefFont;
+    padding: 10px 0;
+    font-size: 0.75rem;
+}
+.footspan{
+    padding: 10px 20px;
+}
+h1{
+    font-family:myFirstFont, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #68a0a1;
+    font-weight: normal;
+    text-shadow: 0px 2px #FBD46D;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+h2,h3{
+    font-family:SecondFont , 'Times New Roman', Times, serif;
+    font-weight: normal;  
+    color:#4F8A8B;
+    position: relative;
+}
+h2{
+    font-style:italic;
+    font-size:1em;  
+}
+
+h3{
+    font-weight: lighter;
+}
+
+
+hr{
+    margin: auto ;
+    color: NONE ;
+    opacity: 1;
+    background-color: rgb(0,0,0,0);
+    border-style:none;
+    border-top:dotted #FBD46D;
+    border-width: 4px;
+    width: 5%;
+    position:relative;
+}
+
+html{
+    margin:0px;
+    height:100%;
+    
+}
+img{
+    position: relative;
+    vertical-align: auto;
+}
+.littletext{
+    width: 60%;
+    font-weight: lighter;
+    margin: auto;
+    position: relative;
+}
+
+/* Navbar */
+    .navbar{
+        background-image:linear-gradient(to right, #f4f6ff, #f4f6ffd2);
+        position:fixed;
+        width: 100%;
+        border-width: 0px 0px 2px 0px;
+        border-color: #FBD46D;
+        border-style: solid;
+        z-index: 1;
+    }
+    .headerimage{
+        height: 30px;
+    }
+    .nav-item{
+        padding:0 25px;
+        font-family: myFirstFont;
+        font-size: 1.2rem;
+    }
+    .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+        color: rgba(170, 125, 0, 0.9);
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(170, 125, 0, 0.55);
+    }
+    .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+        color: rgba(79, 138, 139, 0.7);
+        text-shadow: 0px 1px #FBD46D;
+    }
+    .navbar-light .navbar-nav .nav-link.disabled {
+        color: rgba(170, 125, 0, 0.3);
+    }
+    .navbar-light .navbar-nav .show > .nav-link,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: rgba(170, 125, 0, 0.9);
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(170, 125, 0, 0.55);
+        border-color: rgba(170, 125, 0, 0.1);
+    }
+/* Navbar */
+p{
+    font-family: 'Montserat', sans-serif;
+    color:#07031A;
+}
+#pfp{
+    height: 12em; 
+    position:relative; 
+    bottom: 130px;
+    margin-bottom:-100px; 
+    border-color:#4F8A8B;
+    border-radius: 50%; 
+    border-style:solid;
+}  
+/* CONTAINERBOXES */
+    .gallerybox{
+        margin: auto;
+        padding: 7% 15%;
+        width:100%;
+        text-align: center;
+        border-color:#FBD46D;
+        border-width: 1px 0px ;
+        border-style: solid;
+        position: relative;
+    }
+    .gallerybox::before{    
+        content: "";
+        background-image: url("pattern.jpg");
+        background-size: 17%;
+        background-repeat: repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.25;
+        z-index: -3;
+    }
+    .galleryboxdark{
+        color:#F4F6FF;
+        margin: auto;
+        padding: 7% 15%;
+        width:100%;
+        background-color:#4f8a8bee;
+        text-align: center;
+        border-color:#FBD46D;
+        border-width: 1px 0px ;
+        border-style: solid;
+        position: relative;
+    }
+    .galleryboxdark::before{    
+        content: "";
+        background-image: url("backpattern.png");
+        background-size: 17%;
+        background-repeat: repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 1;
+        z-index: -3;
+    }
+    .galleryboxdark h1{
+        color:#F4F6FF;
+    }
+    .galleryboxdark h2{
+        color:#F4F6FF;
+    }
+    .galleryboxdark h3{
+        color:#FBD46D;
+    }
+    .galleryboxdark p{
+        color:#F4F6FF;
+    }
+        /* PIC TOP SECTION */
+        .TopSec{
+            background-image: url("beads.jpg");
+            background-size: cover;
+            top:0px;
+            width:100%;
+            padding:8%;
+            position: relative;
+            z-index: 0;
+            text-align: center;
+        }
+        #picmid{
+            height:100%;
+        }
+
+        #picmid .wierd, .wierder{
+            opacity: 0;
+        }
+
+        /*    */
+/* END OF CONTAINER BOXES */
+.rate{
+    color:#4F8A8B;
+}
+.skillpicL{
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+}
+.skillpicR{
+    height: 150px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 30px;
+}
+.skillrow{
+    width:80%;
+    margin:60px auto 60px auto;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.workrule
+{
+
+    background-color: #FBD46D; 
+    display:inline-block;
+    width: 15%;
+    border-style: none;
+    height: 1px;
+}
+.workspan
+{
+    text-align: center;
+    display: inline-block;
+    width:20%;
+    height:20px;
+}
+
+/* BUTTONS */
+
+    .BlueButton{
+        margin:20px 10px 0 10px ;
+        background-color: #4F8A8B ;
+        border-color: #4F8A8B ;
+        color: #FBD46D;
+        width:200px;
+    }
+
+    .BlueButton:hover{
+        background-color: #256364 ;
+        border-color: #256364;
+        color: #FBD46D;
+    }
+
+    .BlueOutlineButton{
+        margin:20px 10px 0 10px ;
+        border-color: #4F8A8B ;
+        color: #4F8A8B;
+        width:200px;
+    }
+
+    .BlueOutlineButton:hover{
+        background-color: #4F8A8B ;
+        border-color: #4F8A8B ;
+        color: #FBD46D;
+    }
+
+
+
+
+
+/* GALLERY SPECIFIC */
+
+
+   
+    /* FEATURED ARTWORK */
+
+        .ftArt{
+            height: 500px;
+            position: relative;
+            bottom: 10px;
+            margin: 0;
+            border-color:#FBD46D ;
+            border-style: groove;
+            border-width: 2px;
+            z-index: 1;
+        }
+
+        .fttitle{
+            font-size: 3rem;
+            color: #F4F6FF;
+            text-shadow: 2px 2px #4F8A8B;
+        }
+
+        .ftText{
+            margin:10px 0;
+        }
+        
+        #ftLabel{
+            background-color: #F4F6FF;
+            position: relative;
+            z-index: -4;
+        }
+        
+    /* MORE ART */
+
+        #Art-Carousel{
+            margin: 5% 0 0 0;
+        }
+
+        #Art-Carousel:hover .carousel-caption{
+            opacity:100%;
+        }
+
+        .art-image{
+            height:350px;
+        }
+        .carousel-caption{
+            opacity: 0;
+            transition: 2s;
+        }
+/* END OF GALLERY SPECIFIC */
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1028px)
+{
+    #picmid{
+        background-image: url("beads.gif");
+        background-size: cover;
+        top:0px;
+        height:50%; 
+        width:100%;
+        position: relative;
+        text-align: center;
+    }
+    
+    .contact{
+        display: none;
+    }
+    
+    .navbar{
+        position: relative;
+    }
+}
+
+
+@media (min-width: 1028px)
+{
+    .navbar{
+        padding:0 10%;
+    }
+    .TopSec:hover {
+        background-image: url("beads.gif");
+    
+    }
+    
+    #picmid .wierd{
+        margin-top: 0;
+        top: 35%; 
+        font-size: 4rem;
+        color: #F4F6FF;
+        text-shadow: 2px 2px #4F8A8B;
+    }
+    #picmid .wierder{
+        margin-top:0;
+        top: 30%;
+        font-size: 1.2rem; 
+        color: #F4F6FF;
+        text-shadow: 2px 2px #4F8A8B;
+    }
+    #picmid:hover .wierd{
+        opacity: 100%;
+        transition: 3s;
+    }
+    #picmid:hover .wierder{
+        opacity: 100%;
+        transition: 3s;
+    }
+
+    #ftworkbox{
+        height:100%;
+    }
+
+    .ftCol{
+        left:40%;
+        bottom:10%;
+        position: absolute;
+        z-index: 0;
+    }
+}
